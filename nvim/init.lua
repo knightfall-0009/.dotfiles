@@ -719,4 +719,4 @@ vim.o.expandtab = true
 vim.o.smartindent = true
 vim.o.relativenumber = true
 vim.o.clipboard = "unnamedplus"
-
+vim.cmd [["transparentEnable"]]
