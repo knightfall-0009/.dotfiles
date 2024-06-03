@@ -10,3 +10,7 @@ dconf load /org/gnome/terminal/ < gnome_terminal_settings.txt
 ```
 dconf load /org/gnome/terminal/ > gnome_terminal_settings.txt
 ```
+### Vim transparent background
+```
+hi Normal guibg=NONE ctermbg=NONE
+```
