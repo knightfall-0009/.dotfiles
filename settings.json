@@ -1,0 +1,281 @@
+{
+  "terminal.integrated.defaultProfile.windows": "Git Bash",
+  "vim.visualModeKeyBindingsNonRecursive": [
+    {
+      "before": ["*"],
+      "after": ["y", "/", "<C-r>", "\"", "Enter"]
+    }
+  ],
+  "vim.normalModeKeyBindingsNonRecursive": [
+    {
+      "before": ["g", "c"],
+      "commands": ["editor.action.commentLine"]
+    },
+    {
+      "before": ["K"],
+      "after": ["g", "h"]
+    },
+    {
+      "before": ["X"],
+      "after": ["<Esc>"]
+    },
+    {
+      "before": ["u"],
+      "commands": ["undo"]
+    },
+    {
+      "before": ["<C-r>"],
+      "commands": ["redo"]
+    },
+    {
+      "before": ["<leader>", "p"],
+      "commands": ["workbench.action.showCommands"]
+    },
+    {
+      "before": ["<leader>", "i"],
+      "commands": ["workbench.action.navigateForward"]
+    },
+    {
+      "before": ["<leader>", "o"],
+      "commands": ["workbench.action.navigateBack"]
+    },
+    {
+      "before": ["<leader>", "e", "b"],
+      "commands": ["workbench.action.navigateBackInEditLocations"]
+    },
+    {
+      "before": ["<leader>", "e", "f"],
+      "commands": ["workbench.action.navigateForwardInEditLocations"]
+    },
+    {
+      "before": ["<C-o>"],
+      "commands": ["workbench.action.navigateBack"]
+    },
+    {
+      "before": ["<C-i>"],
+      "commands": ["workbench.action.navigateForward"]
+    },
+    {
+      "before": ["<Leader>", "d", "q"],
+      "after": ["v", "i", "\""]
+    },
+    {
+      "before": ["g", "i"],
+      "commands": ["editor.action.peekImplementation"]
+    },
+    {
+      "before": ["g", "t"],
+      "commands": ["editor.action.goToTypeDefinition"]
+    },
+    {
+      "before": ["g", "r"],
+      "commands": ["editor.action.referenceSearch.trigger"]
+    },
+    {
+      "before": ["<Leader>", "z", "z"],
+      "commands": ["workbench.action.toggleZenMode"]
+    },
+    {
+      "before": ["<Leader>", "a", "t"],
+      "commands": ["angular.goToTemplateForComponent"]
+    },
+    {
+      "before": ["<Leader>", "a", "c"],
+      "commands": ["angular.goToComponentWithTemplateFile"]
+    },
+    {
+      "before": ["<Leader>", "c"],
+      "commands": ["workbench.action.closeActiveEditor"]
+    },
+    {
+      "before": ["<Leader>", "t", "t"],
+      "commands": [":tabnew"]
+    },
+    {
+      "before": ["<Leader>", "t", "n"],
+      "commands": [":tabnext"]
+    },
+    {
+      "before": ["<Leader>", "t", "p"],
+      "commands": [":tabprev"]
+    },
+    {
+      "before": ["<Leader>", "t", "o"],
+      "commands": [":tabo"]
+    },
+    {
+      "before": ["<C-/>"],
+      "commands": ["workbench.action.terminal.toggleTerminal"]
+    },
+    {
+      "before": ["<Leader>", "s", "s"],
+      "commands": ["workbench.action.files.save"]
+    },
+    {
+      "before": ["<Leader>", "f", "e"],
+      "commands": ["workbench.files.action.showActiveFileInExplorer"]
+    },
+    {
+      "before": ["<C-h>"],
+      "after": ["<C-w>", "h"]
+    },
+    {
+      "before": ["<C-j>"],
+      "after": ["<C-w>", "j"]
+    },
+    {
+      "before": ["<C-k>"],
+      "after": ["<C-w>", "k"]
+    },
+    {
+      "before": ["<C-l>"],
+      "after": ["<C-w>", "l"]
+    },
+    {
+      "before": ["<Leader>", "s", "f"],
+      "commands": ["workbench.action.quickOpen"]
+    },
+    {
+      "before": ["<Leader>", "f", "c"],
+      "commands": ["workbench.action.toggleSidebarVisibility"]
+    },
+    {
+      "before": ["<Leader>", "d", "s"],
+      "commands": ["workbench.action.gotoSymbol"]
+    },
+    {
+      "before": ["<Leader>", "w", "s"],
+      "commands": ["workbench.action.showAllSymbols"]
+    },
+    {
+      "before": ["]", "]"],
+      "commands": ["editor.action.wordHighlight.next"]
+    },
+    {
+      "before": ["[", "["],
+      "commands": ["editor.action.wordHighlight.prev"]
+    },
+    {
+      "before": ["<Leader>", "C"],
+      "commands": ["workbench.action.reopenClosedEditor"]
+    },
+    {
+      "before": ["<Leader>", "b"],
+      "commands": ["breadcrumbs.focusAndSelect"]
+    }
+  ],
+  "notebook.formatOnSave.enabled": true,
+  "vim.leader": " ",
+  "[typescript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[json]": {
+    "editor.defaultFormatter": "vscode.json-language-features"
+  },
+  "[jsonc]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "editor.lineNumbers": "on",
+  "editor.minimap.enabled": false,
+  "zenMode.hideLineNumbers": false,
+  "angular.forceStrictTemplates": true,
+  "[scss]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[html]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "vim.foldfix": true,
+  "zenMode.centerLayout": false,
+  "vim.highlightedyank.enable": true,
+  "vim.matchpairs": "(:),{:},[:],<:>",
+  "[javascript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "vim.useSystemClipboard": true,
+  "[python]": {
+    "editor.formatOnType": true,
+    "editor.defaultFormatter": "ms-python.autopep8"
+  },
+  "security.workspace.trust.untrustedFiles": "open",
+  "spring-boot.ls.java.home": "C://Program Files//java",
+  "java.configuration.runtimes": [
+    {
+      "name": "JavaSE-17",
+      "path": "C://Program Files//java",
+      "default": true
+    }
+  ],
+  "editor.wordWrap": "on",
+  "[typescriptreact]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "gopls": {
+    "ui.semanticTokens": true
+  },
+  "[xml]": {
+    "editor.defaultFormatter": "redhat.vscode-xml"
+  },
+  "[yaml]": {
+    "editor.defaultFormatter": "redhat.vscode-yaml"
+  },
+  "redhat.telemetry.enabled": false,
+  "[dockercompose]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "zenMode.hideActivityBar": false,
+  "zenMode.hideStatusBar": false,
+  "java.debug.settings.showHex": false,
+  "java.debug.settings.showQualifiedNames": false,
+  "java.debug.settings.showLogicalStructure": false,
+  "debug.autoExpandLazyVariables": true,
+  "python.formatting.provider": "none",
+  "boot-java.rewrite.reconcile": false,
+  "[java]": {
+    "editor.defaultFormatter": "lcjuves.vscode-gjf"
+  },
+  "java.project.encoding": "setDefault",
+  "java.jdt.ls.java.home": "C:\\Program Files\\java",
+  "editor.stickyScroll.maxLineCount": 7,
+  "java.project.referencedLibraries": {
+    "include": ["lib/**/*.jar"],
+    "sources": {
+      "lib/*.jar": "C:/Users/skotta/Desktop/work/lssv-rest"
+    }
+  },
+  "vscode-neovim.neovimExecutablePaths.win32": "C:\\Program Files\\Neovim\\bin\\nvim.exe",
+  "[handlebars]": {
+    "editor.defaultFormatter": "vscode.html-language-features"
+  },
+  "gitlens.views.commits.files.layout": "tree",
+  "git.openRepositoryInParentFolders": "always",
+  "editor.formatOnSaveMode": "modifications",
+  "java.format.settings.url": "https://raw.githubusercontent.com/google/styleguide/gh-pages/eclipse-java-google-style.xml",
+  "java.import.maven.offline.enabled": false,
+  "java.import.gradle.offline.enabled": false,
+  "java.autobuild.enabled": false,
+  "java.jdt.ls.vmargs": "-Xlog:jni+resolve=off",
+  "requireModuleSupport.configFile": "src\\config-build.js",
+  "requireModuleSupport.modulePath": "src",
+  "requireModuleSupport.onlyNavigateToFile": true,
+  "[svg]": {
+    "editor.defaultFormatter": "jock.svg"
+  },
+  "workbench.colorTheme": "Default Dark+",
+  "[css]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "files.associations": {
+    "*.story": "gherkin"
+  },
+  "[cucumber]": {},
+  "[go]": {
+    "editor.insertSpaces": false,
+    "editor.formatOnSave": true,
+    "editor.codeActionsOnSave": {
+      "source.organizeImports": "explicit"
+    }
+  },
+  "editor.stickyScroll.enabled": false,
+  "debug.disassemblyView.showSourceCode": false
+}
