@@ -80,7 +80,7 @@ return {
       vim.keymap.set('n', '<leader><leader>', builtin.buffers, { desc = '[ ] Find existing buffers' })
 
       vim.keymap.set('n', '<leader>lq', function ()
-        builtin.quickfix({show_line = false, fname_width = 30})
+        builtin.quickfix({show_line = false, fname_width = 45})
       end , { desc = 'list quickfix items' })
 
       -- Slightly advanced example of overriding default behavior and theme

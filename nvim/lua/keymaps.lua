@@ -44,7 +44,3 @@ vim.api.nvim_create_autocmd("TextYankPost", {
 
 vim.keymap.set("n", "[q", vim.cmd.cprev, { desc = "Previous Quickfix" })
 vim.keymap.set("n", "]q", vim.cmd.cnext, { desc = "Next Quickfix" })
-
-
-
--- vim: ts=2 sts=2 sw=2 et
