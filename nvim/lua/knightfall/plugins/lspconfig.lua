@@ -57,7 +57,7 @@ return {
           -- Fuzzy find all the symbols in your current workspace.
           --  Similar to document symbols, except searches over your entire project.
           map('<leader>ws', function ()
-            require('telescope.builtin').lsp_dynamic_workspace_symbols({show_line=false})
+            require('telescope.builtin').lsp_workspace_symbols({ fname_width = 60, symbol_width = 30, symbol_type_width = 10})
           end, '[W]orkspace [S]ymbols')
 
           -- Rename the variable under your cursor.

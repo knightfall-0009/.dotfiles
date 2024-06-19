@@ -66,4 +66,8 @@ vim.bo.softtabstop = 2
 
 vim.loader.enable()
 
+vim.g.netrw_winsize = 20
+vim.g.netrw_banner = 0
+vim.g.netrw_liststyle = 3
+
 -- vim: ts=2 sts=2 sw=2 et

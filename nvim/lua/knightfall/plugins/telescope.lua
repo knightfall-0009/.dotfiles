@@ -45,18 +45,22 @@ return {
 
       -- [[ Configure Telescope ]]
       -- See `:help telescope` and `:help telescope.setup()`
-      
       require('telescope').setup {
         defaults = {
+          wrap_results = true,
           layout_strategy = 'flex',
           file_ignore_patterns = { "node_modules", ".*.test.*." },
           prompt_prefix = "   ",
           mappings = {
             n = {
+              ["<C-j>"] = require('telescope.actions').move_selection_next,
+              ["<C-k>"] = require('telescope.actions').move_selection_previous,
               ["<C-p>"] = require('telescope.actions.layout').toggle_preview,
               ["q"] = require("telescope.actions").close
             },
             i = {
+              ["<C-j>"] = require('telescope.actions').move_selection_next,
+              ["<C-k>"] = require('telescope.actions').move_selection_previous,
               ["<C-p>"] = require('telescope.actions.layout').toggle_preview,
               ["<C-q>"] = require("telescope.actions").close
             },
