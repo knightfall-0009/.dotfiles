@@ -29,18 +29,18 @@ return {
           --  This is where a variable was first declared, or where a function is defined, etc.
           --  To jump back, press <C-t>.
           map('gd', function ()
-            require('telescope.builtin').lsp_definitions({show_line = false, fname_width=45})
+            require('telescope.builtin').lsp_definitions({show_line = false})
           end, '[G]oto [D]efinition')
 
           -- Find references for the word under your cursor.
           map('gr', function ()
-            require('telescope.builtin').lsp_references({show_line = false, fname_width=45})
+            require('telescope.builtin').lsp_references({show_line = false})
           end, '[G]oto [R]eferences')
 
           -- Jump to the implementation of the word under your cursor.
           --  Useful when your language has ways of declaring types without an actual implementation.
           map('gI', function ()
-            require('telescope.builtin').lsp_implementations({show_line = false, fname_width=45})
+            require('telescope.builtin').lsp_implementations({show_line = false})
           end, '[G]oto [I]mplementation')
 
           -- Jump to the type of the word under your cursor.
@@ -57,7 +57,7 @@ return {
           -- Fuzzy find all the symbols in your current workspace.
           --  Similar to document symbols, except searches over your entire project.
           map('<leader>ws', function ()
-            require('telescope.builtin').lsp_dynamic_workspace_symbols({show_line=false, fname_width=45})
+            require('telescope.builtin').lsp_dynamic_workspace_symbols({show_line=false})
           end, '[W]orkspace [S]ymbols')
 
           -- Rename the variable under your cursor.
