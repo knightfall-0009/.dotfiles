@@ -21,7 +21,7 @@ require("lazy").setup({
   require "knightfall/plugins/nvim_surround",
   require "knightfall/plugins/toggleterm",
   require "knightfall/plugins/mini_ai",
-  require "knightfall/plugins/mini_ai",
+  require "knightfall/plugins/outline",
 })
 
 -- vim: ts=2 sts=2 sw=2 et

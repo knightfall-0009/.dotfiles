@@ -18,4 +18,5 @@ return {
       require('bamboo').load()
     end,
   },
+  { "catppuccin/nvim", name = "catppuccin", priority = 1000 }
 }

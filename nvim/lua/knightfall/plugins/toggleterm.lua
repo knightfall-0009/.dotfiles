@@ -3,7 +3,7 @@ return {
   config = function ()
     require('toggleterm').setup({
       size = 10,
-      open_mapping = { "<c-t>","<C-/>" },
+      open_mapping = { "<C-_>", "<C-/>" },
       shading_factor = 1,
       direction = "float",
       float_opts = {
