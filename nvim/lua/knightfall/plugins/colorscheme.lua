@@ -1,13 +1,21 @@
 return {
-    'ellisonleao/gruvbox.nvim',
+  {'ellisonleao/gruvbox.nvim',
     priority = 1000, -- Make sure to load this before all the other start plugins.
-    init = function()
-      vim.cmd.colorscheme 'gruvbox'
-    end,
-
     config = function()
       require('gruvbox').setup({
         transparent_mode = true
       })
     end
-  }
+  },
+  {
+    'ribru17/bamboo.nvim',
+    lazy = false,
+    priority = 1000,
+    config = function()
+      require('bamboo').setup {
+        transparent = true
+      }
+      require('bamboo').load()
+    end,
+  },
+}

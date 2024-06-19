@@ -48,7 +48,19 @@ return {
       
       require('telescope').setup {
         defaults = {
+          layout_strategy = 'flex',
           file_ignore_patterns = { "node_modules", ".*.test.*." },
+          prompt_prefix = "   ",
+          mappings = {
+            n = {
+              ["<C-p>"] = require('telescope.actions.layout').toggle_preview,
+              ["q"] = require("telescope.actions").close
+            },
+            i = {
+              ["<C-p>"] = require('telescope.actions.layout').toggle_preview,
+              ["<C-q>"] = require("telescope.actions").close
+            },
+          },
         },
         -- You can put your default mappings / updates / etc. in here
         --  All the info you're looking for is in `:help telescope.setup()`
