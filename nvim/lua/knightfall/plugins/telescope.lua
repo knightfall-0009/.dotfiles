@@ -49,7 +49,7 @@ return {
         defaults = {
           wrap_results = true,
           layout_strategy = 'flex',
-          file_ignore_patterns = { "node_modules", ".*.test.*." },
+          file_ignore_patterns = { "node_modules", ".*.test.*.", ".*.github.*." },
           prompt_prefix = "   ",
           mappings = {
             n = {
