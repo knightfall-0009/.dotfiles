@@ -28,12 +28,13 @@ return {
           -- Jump to the definition of the word under your cursor.
           --  This is where a variable was first declared, or where a function is defined, etc.
           --  To jump back, press <C-t>.
-          map('gd', require('telescope.builtin').lsp_definitions, '[G]oto [D]efinition')
+          map('gd', function ()
+            require('telescope.builtin').lsp_definitions({show_line = false, fname_width=45})
+          end, '[G]oto [D]efinition')
 
           -- Find references for the word under your cursor.
           map('gr', function ()
             require('telescope.builtin').lsp_references({show_line = false, fname_width=45})
-            
           end, '[G]oto [R]eferences')
 
           -- Jump to the implementation of the word under your cursor.
@@ -49,7 +50,9 @@ return {
 
           -- Fuzzy find all the symbols in your current document.
           --  Symbols are things like variables, functions, types, etc.
-          map('<leader>ds', require('telescope.builtin').lsp_document_symbols, '[D]ocument [S]ymbols')
+          map('<leader>ds', function ()
+            require('telescope.builtin').lsp_document_symbols({ symbol_width = 45 })
+          end, '[D]ocument [S]ymbols')
 
           -- Fuzzy find all the symbols in your current workspace.
           --  Similar to document symbols, except searches over your entire project.
@@ -134,15 +137,14 @@ return {
         -- clangd = {},
         -- gopls = {},
         -- pyright = {},
-        -- rust_analyzer = {},
         -- ... etc. See `:help lspconfig-all` for a list of all the pre-configured LSPs
         --
         -- Some languages (like typescript) have entire language plugins that can be useful:
         --    https://github.com/pmizio/typescript-tools.nvim
         --
         -- But for many setups, the LSP (`tsserver`) will work just fine
-        -- tsserver = {},
-        --
+        tsserver = {},
+        rust_analyzer = {},
 
         lua_ls = {
           -- cmd = {...},
