@@ -4,9 +4,21 @@
     {
       "before": ["*"],
       "after": ["y", "/", "<C-r>", "\"", "Enter"]
+    },
+    {
+      "before": ["g", "c"],
+      "commands": ["editor.action.blockComment"]
     }
   ],
   "vim.normalModeKeyBindingsNonRecursive": [
+    {
+      "before": [">"],
+      "after": ["<C-w>", ">"]
+    },
+    {
+      "before": ["<"],
+      "after": ["<C-w>", "<"]
+    },
     {
       "before": ["g", "c"],
       "commands": ["editor.action.commentLine"]
