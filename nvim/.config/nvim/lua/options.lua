@@ -38,7 +38,7 @@ vim.opt.updatetime = 250
 
 -- Decrease mapped sequence wait time
 -- Displays which-key popup sooner
-vim.opt.timeoutlen = 300
+vim.opt.timeoutlen = 5000
 
 -- Configure how new splits should be opened
 vim.opt.splitright = true
@@ -69,5 +69,7 @@ vim.loader.enable()
 vim.g.netrw_winsize = 20
 vim.g.netrw_banner = 0
 vim.g.netrw_liststyle = 3
+vim.g.loaded_netrwPlugin = 1
+vim.g.loaded_netrw = 1
 
 -- vim: ts=2 sts=2 sw=2 et

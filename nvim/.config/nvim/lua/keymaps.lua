@@ -45,4 +45,4 @@ vim.api.nvim_create_autocmd("TextYankPost", {
 vim.keymap.set("n", "[q", vim.cmd.cprev, { desc = "Previous Quickfix" })
 vim.keymap.set("n", "]q", vim.cmd.cnext, { desc = "Next Quickfix" })
 
-vim.keymap.set("n", "<leader>E", "<cmd>Vexplore<cr>", { desc = "Open Netrw" })
+vim.keymap.set("n", "<leader>e", "<cmd>Neotree toggle<cr>", { desc = "Open Netrw" })
