@@ -39,7 +39,7 @@ return {
 
           -- Jump to the implementation of the word under your cursor.
           --  Useful when your language has ways of declaring types without an actual implementation.
-          map('gI', function ()
+          map('gi', function ()
             require('telescope.builtin').lsp_implementations({show_line = false})
           end, '[G]oto [I]mplementation')
 
