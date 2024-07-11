@@ -68,10 +68,6 @@
       "commands": ["workbench.action.navigateForward"]
     },
     {
-      "before": ["<Leader>", "d", "q"],
-      "after": ["v", "i", "\""]
-    },
-    {
       "before": ["g", "i"],
       "commands": ["editor.action.peekImplementation"]
     },
@@ -104,12 +100,12 @@
       "commands": [":tabnew"]
     },
     {
-      "before": ["<Leader>", "t", "n"],
-      "commands": [":tabnext"]
+      "before": ["]", "b"],
+      "commands": ["workbench.action.nextEditor"]
     },
     {
-      "before": ["<Leader>", "t", "p"],
-      "commands": [":tabprev"]
+      "before": ["[", "b"],
+      "commands": ["workbench.action.previousEditor"]
     },
     {
       "before": ["<Leader>", "t", "o"],
@@ -172,11 +168,22 @@
       "commands": ["workbench.action.reopenClosedEditor"]
     },
     {
-      "before": ["<Leader>", "b"],
+      "before": ["B"],
       "commands": ["breadcrumbs.focusAndSelect"]
+    },
+    {
+      "before": ["[", "d"],
+      "commands": ["editor.action.marker.prev"]
+    },
+    {
+      "before": ["]", "d"],
+      "commands": ["editor.action.marker.next"]
+    },
+    {
+      "before": ["<space>", "<space>"],
+      "commands": ["workbench.action.toggleAuxiliaryBar"]
     }
   ],
-  "notebook.formatOnSave.enabled": true,
   "vim.leader": " ",
   "[typescript]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode"
@@ -185,10 +192,9 @@
     "editor.defaultFormatter": "vscode.json-language-features"
   },
   "[jsonc]": {
-    "editor.defaultFormatter": "esbenp.prettier-vscode"
+    "editor.defaultFormatter": "vscode.json-language-features"
   },
-  "editor.lineNumbers": "on",
-  "editor.minimap.enabled": false,
+  "editor.lineNumbers": "relative",
   "zenMode.hideLineNumbers": false,
   "angular.forceStrictTemplates": true,
   "[scss]": {
@@ -198,7 +204,6 @@
     "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
   "vim.foldfix": true,
-  "zenMode.centerLayout": false,
   "vim.highlightedyank.enable": true,
   "vim.matchpairs": "(:),{:},[:],<:>",
   "[javascript]": {
@@ -232,55 +237,28 @@
     "editor.defaultFormatter": "redhat.vscode-yaml"
   },
   "redhat.telemetry.enabled": false,
-  "[dockercompose]": {
-    "editor.defaultFormatter": "esbenp.prettier-vscode"
-  },
-  "zenMode.hideActivityBar": false,
-  "zenMode.hideStatusBar": false,
   "java.debug.settings.showHex": false,
   "java.debug.settings.showQualifiedNames": false,
   "java.debug.settings.showLogicalStructure": false,
   "debug.autoExpandLazyVariables": true,
-  "python.formatting.provider": "none",
   "boot-java.rewrite.reconcile": false,
   "[java]": {
-    "editor.defaultFormatter": "lcjuves.vscode-gjf"
+    "editor.defaultFormatter": "redhat.java"
   },
   "java.project.encoding": "setDefault",
   "java.jdt.ls.java.home": "C:\\Program Files\\java",
   "editor.stickyScroll.maxLineCount": 7,
-  "java.project.referencedLibraries": {
-    "include": ["lib/**/*.jar"],
-    "sources": {
-      "lib/*.jar": "C:/Users/skotta/Desktop/work/lssv-rest"
-    }
-  },
   "vscode-neovim.neovimExecutablePaths.win32": "C:\\Program Files\\Neovim\\bin\\nvim.exe",
-  "[handlebars]": {
-    "editor.defaultFormatter": "vscode.html-language-features"
-  },
   "gitlens.views.commits.files.layout": "tree",
   "git.openRepositoryInParentFolders": "always",
   "editor.formatOnSaveMode": "modifications",
-  "java.format.settings.url": "https://raw.githubusercontent.com/google/styleguide/gh-pages/eclipse-java-google-style.xml",
   "java.import.maven.offline.enabled": false,
   "java.import.gradle.offline.enabled": false,
   "java.autobuild.enabled": false,
   "java.jdt.ls.vmargs": "-Xlog:jni+resolve=off",
-  "requireModuleSupport.configFile": "src\\config-build.js",
-  "requireModuleSupport.modulePath": "src",
-  "requireModuleSupport.onlyNavigateToFile": true,
-  "[svg]": {
-    "editor.defaultFormatter": "jock.svg"
-  },
-  "workbench.colorTheme": "Default Dark+",
   "[css]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
-  "files.associations": {
-    "*.story": "gherkin"
-  },
-  "[cucumber]": {},
   "[go]": {
     "editor.insertSpaces": false,
     "editor.formatOnSave": true,
@@ -289,5 +267,12 @@
     }
   },
   "editor.stickyScroll.enabled": false,
-  "debug.disassemblyView.showSourceCode": false
+  "debug.disassemblyView.showSourceCode": false,
+  "vim.showMarksInGutter": true,
+  "workbench.tree.enableStickyScroll": false,
+  "zenMode.hideStatusBar": false,
+  "zenMode.centerLayout": false,
+  "editor.minimap.enabled": false,
+  "window.customTitleBarVisibility": "windowed",
+  "editor.unicodeHighlight.invisibleCharacters": false,
 }
